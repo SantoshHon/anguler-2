@@ -1,0 +1,10 @@
+<!-- <button [disabled]="allowNewServer" (click)="onCreateServer()"> Add New Server</button> -->
+<label>UserName</label>
+<input type="text" [(ngModel)]="userName">
+
+<br>
+<p>
+{{userName}}
+</p>
+<br>
+<button [disabled]="userName===''" (click)="resetName()" >Reset User</button>
